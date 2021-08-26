@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MathWebApp:war exploded">
+    <output-path>$PROJECT_DIR$/../MathWebApp/target/MathWebApp</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>MathWebApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MathWebApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="MathLibrary-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="MathLibrary" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../MathWebApp/target/MathWebApp/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="MathWebApp/web/Web" />
+    </root>
+  </artifact>
+</component>
